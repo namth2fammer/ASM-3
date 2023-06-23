@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
+:root {
+  --primary-color: #ffffff;
+}
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.img-baner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+}
+.clear {
+  clear: both;
+}
+h1 {
+  margin: 0px 0px 0px 0px;
+}

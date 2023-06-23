@@ -1,0 +1,193 @@
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-areas:
+    " goal  goal team timeline"
+    " scopes scopes primary timeline";
+}
+.boxed {
+  position: relative;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+  background-color: white;
+}
+.boxed:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  margin: -10px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(255, 63, 255),
+    rgb(229, 255, 0)
+  );
+}
+/* Goal */
+.container-goal {
+  grid-area: goal;
+  border: 1px solid blue;
+  padding: 20px 20px;
+}
+.container-goal .goal-1 {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  border-bottom: gray solid 1px;
+  padding: 20px 20px;
+}
+
+.container-goal h1 {
+  margin: 0;
+  grid-column: 1/-1;
+  border-bottom: gray solid 1px;
+  padding: 15px 15px;
+}
+.goal-1 i {
+  justify-self: center;
+  place-self: center;
+}
+/* Team */
+.container-team {
+  border: 1px solid blue;
+  grid-area: team;
+  padding: 20px 20px;
+}
+.container-team .team {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.container-team h1 {
+  margin: 0;
+  grid-column: 1/-1;
+  border-bottom: gray solid 1px;
+  padding: 15px 15px;
+}
+.team i {
+  place-self: center;
+}
+.ul-info {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* timeline */
+.container-timeline {
+  border: 1px solid blue;
+  grid-area: timeline;
+  padding: 20px 20px;
+}
+.number-timeline {
+  color: #f7f7f7;
+  display: grid;
+  height: 40px;
+  width: 40px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  background-color: rgb(183, 129, 233);
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px;
+}
+.container-timeline .timeline {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+.container-timeline h1 {
+  margin: 0;
+  grid-column: 1/-1;
+  border-bottom: gray solid 1px;
+  padding: 15px 15px;
+}
+.deadline {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  border-bottom: 2px dotted #038dc3;
+}
+
+/* Scopes */
+.container-scopes {
+  border: 1px solid blue;
+  grid-area: scopes;
+  padding: 20px 20px;
+}
+
+.scopes {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column: 20px;
+}
+
+.scopes h1 {
+  margin: 0;
+  padding: 10px;
+  grid-column: 1/-1;
+  border-bottom: gray solid 1px;
+}
+/* primary */
+.container-primary {
+  border: 1px solid blue;
+  grid-area: primary;
+  padding: 20px 20px;
+}
+.primary {
+  display: grid;
+  grid-template-columns: 25% 70%;
+  row-gap: 20px;
+}
+.primary h1 {
+  margin: 0;
+  grid-column: 1/-1;
+  border-bottom: gray solid 1px;
+  padding: 10px;
+}
+.primary i {
+  justify-self: center;
+  text-align: center;
+}
+p,
+h4 {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      " goal  goal goal goal"
+      " scopes scopes scopes scopes"
+      "team team team team"
+      "primary primary primary primary"
+      "timeline timeline timeline timeline";
+  }
+  .container-goal .goal-1,
+  .container-team .team,
+  .container-timeline .timeline,
+  .container-primary .primary {
+    grid-template-columns: 1fr;
+    border-bottom: gray solid 1px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      " goal  goal goal goal"
+      " scopes scopes scopes scopes"
+      "team team team team"
+      "primary primary primary primary"
+      "timeline timeline timeline timeline";
+  }
+  .container-goal .goal-1 {
+    grid-template-columns: 1fr;
+    border-bottom: gray solid 1px;
+  }
+}

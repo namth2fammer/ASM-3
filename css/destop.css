@@ -1,0 +1,358 @@
+body {
+  margin: 0px auto;
+}
+/* Bar */
+.nav-bar {
+  width: 100%;
+}
+.nav-bar a:hover {
+  border-bottom: red solid 1px;
+  background-color: #199cdb;
+}
+.container-bar {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0;
+  margin: 0 auto;
+  border: gray solid 1px;
+}
+.thongtin {
+  border-left: gray solid 1px;
+  place-self: center;
+}
+.lylich {
+  border-left: gray solid 1px;
+  border-right: gray solid 1px;
+  place-self: center;
+}
+.chungchi {
+  border-left: gray solid 1px;
+  place-self: center;
+}
+.duan {
+  border-left: gray solid 1px;
+  border-right: gray solid 1px;
+  place-self: center;
+}
+.name {
+  display: grid;
+  border-left: gray solid 1px;
+  place-self: center;
+  justify-content: center;
+}
+.li-bar {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.name-p {
+  margin: 0;
+  place-self: center;
+}
+
+.container-job {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+/* info */
+.container-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style-type: none;
+}
+.target {
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgba(214, 209, 209, 0.1);
+  padding: 30px 10px 30px 20px;
+}
+.personal {
+  justify-content: start;
+  align-items: start;
+  background-color: rgba(203, 197, 197, 0.443);
+  padding: 30px 10px 30px 20px;
+}
+.li-info {
+  padding: 0;
+}
+.ul-info {
+  padding: 0;
+  list-style-type: none;
+}
+.inconinfo {
+}
+
+.input-info {
+  height: 20px;
+  width: 80%;
+  margin-top: 40px;
+}
+.submit-info {
+  margin-top: 30px;
+  background-color: #038dc3;
+  border-radius: 5px;
+  height: 30px;
+  width: 15%;
+}
+.grid-info {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+i {
+  color: #199cdb;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* JOb */
+.hidden {
+  display: none;
+}
+.container-job {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+}
+.view-more {
+  display: inline;
+}
+.view-more-exp {
+  place-self: center;
+  padding: 10px 25px;
+  background-color: yellow;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.exp {
+  grid-column: 1/-1;
+}
+/* EDU */
+.view-more-edu {
+  place-self: center;
+  padding: 10px 25px;
+  background-color: yellow;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.edu {
+  grid-column: 1/-1;
+}
+/* ACT */
+.view-more-act {
+  place-self: center;
+  padding: 10px 25px;
+  background-color: yellow;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.act {
+  grid-column: 1/-1;
+}
+.view-more-fav {
+  place-self: center;
+  padding: 10px 25px;
+  background-color: yellow;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+/* language */
+.view-more-lg {
+  place-self: center;
+  padding: 10px 25px;
+  background-color: yellow;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.lg {
+  grid-column: 1/-1;
+}
+/* Skill */
+.view-more-skill {
+  place-self: center;
+  padding: 10px 25px;
+  background-color: yellow;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.skill {
+  grid-column: 1/-1;
+}
+
+/* so thich */
+
+.sothich {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  border: gray solid 1px;
+  margin-top: 0px;
+  justify-content: space-around;
+  align-items: center;
+}
+.fav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column: 1/-1;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.iconinfo {
+  color: deepskyblue;
+  padding-top: 10px;
+}
+
+.i1 {
+  display: grid;
+  height: 40px;
+  width: 40px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px;
+}
+.i2 {
+  display: grid;
+  justify-content: center;
+}
+/* */
+.info-job-exp {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  border: gray solid 1px;
+  text-align: start;
+  margin-top: 0px;
+}
+.info-job {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  border: gray solid 1px;
+  text-align: start;
+  margin-top: 0px;
+}
+
+#hidden {
+}
+.mt-40 {
+  display: contents;
+}
+
+.info-1 {
+  padding: 10px;
+  place-self: center;
+}
+.info-2 {
+  height: 20px;
+  width: 50px;
+  place-self: center;
+}
+
+.gach-duoi {
+  background: #199cdb;
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+/* chứng chỉ */
+.CF {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 14px;
+  list-style: none;
+  line-height: 1.5;
+}
+.CF-h1 {
+  justify-self: start;
+  height: 80px;
+  margin-top: 20px;
+  grid-column: 1 / 4;
+}
+/* Du an */
+.CV {
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.CV-MY {
+  justify-content: center;
+  align-items: center;
+}
+.CV-EXP {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.CV-date {
+  color: #f7f7f7;
+  display: grid;
+  border: 1px solid #038dc3;
+  height: 25px;
+  width: 50px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #038dc3;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+table,
+th,
+td {
+  border: 1px solid rgba(203, 197, 197, 0.443);
+}
+@media (max-width: 768px) {
+  .container-info,
+  .container-job,
+  . {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .CF-1 {
+    grid-template-columns: 1fr;
+  }
+  .name a {
+    display: none;
+  }
+  .li-bar {
+    min-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container-bar,
+  .container-info,
+  .container-job,
+  .CF,
+  .CV {
+    grid-template-columns: 1fr;
+  }
+  .CV-EXP {
+    grid-template-columns: 1fr;
+  }
+  .li-bar {
+    border-left: none;
+    border-right: none;
+    place-self: start;
+  }
+}
