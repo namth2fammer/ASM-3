@@ -273,6 +273,17 @@ img {
 }
 
 /* chứng chỉ */
+.container-CF {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+}
+.container-CF h1 {
+  justify-self: center;
+  text-align: center;
+  width: 100%;
+  grid-column: 1/-1;
+}
 .CF {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -322,37 +333,4 @@ table,
 th,
 td {
   border: 1px solid rgba(203, 197, 197, 0.443);
-}
-@media (max-width: 768px) {
-  .container-info,
-  .container-job,
-  . {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .CF-1 {
-    grid-template-columns: 1fr;
-  }
-  .name a {
-    display: none;
-  }
-  .li-bar {
-    min-width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .container-bar,
-  .container-info,
-  .container-job,
-  .CF,
-  .CV {
-    grid-template-columns: 1fr;
-  }
-  .CV-EXP {
-    grid-template-columns: 1fr;
-  }
-  .li-bar {
-    border-left: none;
-    border-right: none;
-    place-self: start;
-  }
 }

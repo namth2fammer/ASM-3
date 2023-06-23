@@ -1,0 +1,20 @@
+@media (max-width: 500px) {
+  .container-bar,
+  .container-info,
+  .container-job,
+  .container-CF,
+  .CV {
+    grid-template-columns: 1fr;
+  }
+  .CV-EXP {
+    grid-template-columns: 1fr;
+  }
+  .CF {
+    grid-template-columns: 1fr;
+  }
+  .li-bar {
+    border-left: none;
+    border-right: none;
+    place-self: start;
+  }
+}
